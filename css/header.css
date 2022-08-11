@@ -1,79 +1,7 @@
-/* Global */
-
-:root {
-  /* Color */
-  --color-white: #ffffff;
-  --color-light-white: #eeeeee;
-  --color-dark-white: #bdbdbd;
-  --color-dark-grey: #4d4d4d;
-  --color-grey: #616161;
-  --color-light-grey: #7c7979;
-  --color-black: #000000;
-  --color-brand: #ff385c;
-
-  /* Font size */
-  --font-large: 48px;
-  --font-medium: 28px;
-  --font-regular: 18px;
-  --font-small: 16px;
-  --font-micro: 14px;
-
-  /* Font weight */
-  --weight-bold: 700;
-  --weight-semi-bold: 600;
-  --weight-regular: 400;
-
-  /* Size */
-  --size-border-radious: 4px;
-
-  /* Annimations */
-  --annimation-duration: 300ms;
-}
-
-/* Universal tags */
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  cursor: default;
-}
-
-a {
-  text-decoration: none;
-}
-
-em {
-  font-style: normal;
-  font-weight: 700;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-button {
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  outline: none;
-}
-
-cite {
-  font-style: none;
-}
-
-.blind {
-  display: none;
-}
-
 /* Header */
 
 #header {
   width: 100%;
-  height: 10rem;
 }
 
 .header_flex {
@@ -182,7 +110,7 @@ cite {
 
 .header_profile_host_map {
   width: 46px;
-  height: 42px;
+  height: 14px;
 }
 
 .header_profile_host a {
@@ -199,7 +127,7 @@ cite {
   border-radius: 40px;
   box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
   width: 77px;
-  height: 42px;
+  height: 44px;
 }
 
 .header_profile_user img {
