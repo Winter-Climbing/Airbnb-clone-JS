@@ -3,8 +3,6 @@
 @import url(./mainPage/nav.css);
 @import url(./mainPage/main.css);
 @import url(./mainPage/footer.css);
-/* detail */
-@import url(./detailPage/header.css);
 
 :root {
   /* Color */

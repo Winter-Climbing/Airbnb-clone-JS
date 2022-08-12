@@ -1,6 +1,3 @@
-@import url(./detailHeader.css);
-@import url(./detailImageSection.css);
-
 :root {
   /* Color */
   --color-white: #ffffff;
@@ -72,4 +69,16 @@ cite {
 
 .blind {
   display: none;
+}
+
+/* start */
+
+.image_title h1 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.image_title_social {
+  display: flex;
+  justify-content: space-around;
 }
