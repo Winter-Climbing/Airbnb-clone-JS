@@ -307,3 +307,61 @@ cite {
   margin-left: 16px;
   font-size: 12px;
 }
+
+#checkList {
+  padding: 48px 0px;
+}
+
+#checkList h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.checkList_contents {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.checkList_contents img,
+.fa-solid fa-sparkles {
+  width: 15px;
+  height: 15px;
+}
+
+.checkList_contents h4 {
+  font-weight: 600;
+}
+
+.checkList_contents_health {
+  max-width: 330px;
+}
+
+.checkList_contents_health_fumigator {
+  display: flex;
+}
+
+.checkList_contents_health_rule {
+  max-width: 300px;
+  display: block;
+  margin-left: 6px;
+}
+
+.checkList_contents_rule div,
+.checkList_contents_health div,
+.checkList_contents_refund div {
+  margin-top: 12px;
+}
+
+.checkList_contents_rule img,
+.checkList_contents_health img,
+.checkList_contents_refund img {
+  margin-right: 12px;
+}
+
+.checkList_contents_more {
+  display: block;
+  margin-top: 24px;
+  font-weight: 600;
+  text-decoration: underline;
+}
