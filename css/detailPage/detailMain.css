@@ -83,12 +83,31 @@ cite {
 /* Main Left */
 
 .main_left {
+  display: flex;
+  flex-direction: column;
   width: 653px;
 }
 
 .main_left_title {
   display: flex;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--color-airbnb-grey);
+}
+
+.main_left_title_text h1 {
+  color: var(--color-font-black);
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.main_left_title_text span:not(:last-of-type)::after {
+  content: "ꞏ";
+  display: inline-block;
+  width: 1px;
+  margin: 0 8px;
 }
 
 .main_left_title img {
@@ -260,5 +279,199 @@ cite {
 }
 
 .main_right_bottom span {
+  text-decoration: underline;
+}
+
+/* Wait */
+
+#wait {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-airbnb-grey);
+  width: 100%;
+  height: 224px;
+  padding: 32px 0px;
+}
+
+.wait_words {
+  display: flex;
+}
+
+.wait_words img {
+  width: 24px;
+  height: 24px;
+}
+
+.wait_words_sentence {
+  margin-left: 16px;
+}
+
+.wait_words_sentence h2 {
+  font-weight: 600;
+}
+
+.wait_words_sentence p {
+  margin-top: 6px;
+  font-size: 14px;
+  color: var(--color-airbnbFont-grey);
+}
+
+#air_cover {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 0px;
+  border-bottom: 1px solid var(--color-airbnb-grey);
+}
+
+#air_cover img {
+  width: 97.5px;
+  height: 26px;
+}
+
+#air_cover p {
+  margin-top: 16px;
+}
+
+#air_cover p:last-child {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+#translate {
+  padding: 32px 0px 48px;
+  border-bottom: 1px solid var(--color-airbnb-grey);
+  width: 100%;
+}
+
+.translate_header {
+  display: flex;
+}
+
+.translate_header img {
+  width: 16px;
+  height: 16px;
+}
+
+.translate_header h2 {
+  margin-left: 12px;
+}
+
+.translate_header_underline {
+  color: var(--color-font-black);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.translate_sentence {
+  margin-top: 32px;
+}
+
+#lodging_place {
+  width: 100%;
+  padding: 48px 0px;
+  border-bottom: 1px solid var(--color-airbnb-grey);
+}
+
+#lodging_place h2 {
+  color: var(--color-font-black);
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.lodging_place_item {
+  width: 207px;
+  height: 146px;
+  margin-top: 24px;
+  padding: 24px;
+  border: 1px solid var(--color-airbnb-grey);
+  border-radius: 10px;
+}
+
+.lodging_place_item img {
+  width: 21px;
+  height: 19.5px;
+}
+
+.lodging_place_item h4 {
+  margin-top: 16.5px;
+}
+
+.lodging_place_item p {
+  margin-top: 8px;
+}
+
+#convenient_facilities {
+  padding: 48px 0px;
+  border-bottom: 1px solid var(--color-airbnb-grey);
+}
+
+#convenient_facilities h2 {
+  color: var(--color-font-black);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#convenient_facilities img {
+  width: 24px;
+  height: 24px;
+}
+
+.convenient_facilities_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  margin-top: 24px;
+  height: 160px;
+}
+
+#convenient_facilities button {
+  width: 220px;
+  height: 48px;
+  margin-top: 24px;
+  border: 1px solid var(--color-black);
+  border-radius: 10px;
+  color: var(--color-font-black);
+  font-weight: 600;
+}
+
+#calender {
+  padding: 48px 0px;
+  border-bottom: 1px solid var(--color-airbnb-grey);
+}
+
+#calender h2 {
+  font-size: 22px;
+  color: var(--color-font-black);
+  font-weight: 600;
+}
+
+#calender p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--color-airbnbFont-grey);
+}
+
+.calender_detail {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 354px;
+}
+
+.calender_bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calender_bottom img {
+  width: 24px;
+  height: 24px;
+}
+
+.calender_bottom span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-font-black);
   text-decoration: underline;
 }
