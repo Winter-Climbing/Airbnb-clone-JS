@@ -1,6 +1,7 @@
 @import url(./detailHeader.css);
 @import url(./detailImageSection.css);
 @import url(./detailMain.css);
+@import url(./variable.css);
 
 :root {
   /* Color */
