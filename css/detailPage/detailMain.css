@@ -48,6 +48,8 @@
 .main_right {
   width: 373px;
   height: 552px;
+  position: sticky;
+  top: 50px;
 }
 
 .main_right_top {
