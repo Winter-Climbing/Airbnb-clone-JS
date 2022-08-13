@@ -1,0 +1,160 @@
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-airbnb-grey: #dddddd;
+  --color-airbnbFont-grey: #717171;
+  --color-black: #000000;
+  --color-font-black: #222222;
+  --color-brand: #ff385c;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radious: 4px;
+
+  /* Annimations */
+  --annimation-duration: 300ms;
+}
+
+/* Universal tags */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+}
+
+em {
+  font-style: normal;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+cite {
+  font-style: none;
+}
+
+.blind {
+  display: none;
+}
+
+#footer {
+  background-color: #f5f5f5;
+  border-top: 1px solid var(--color-airbnb-grey);
+}
+
+.footer_webPages_flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 119px;
+  padding: 48px 80px;
+}
+
+.footer_webPages_flex h4 {
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.footer_webPages_flex a {
+  margin-bottom: 16px;
+}
+
+.footer_webPages_flex_apply,
+.footer_webPages_flex_community,
+.footer_webPages_flex_hosting,
+.footer_webPages_flex_airbnb {
+  display: flex;
+  flex-direction: column;
+}
+
+/* dfsdaf */
+
+.footer {
+  padding: 0px 80px;
+
+  margin: 0px 119px;
+  padding: 0px 80px 24px;
+}
+
+.footer_contents {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 0px 14px 0px;
+  border-bottom: 1px solid var(--color-airbnb-grey);
+  border-top: 1px solid var(--color-airbnb-grey);
+}
+
+.footer_contents_left {
+  color: var(--color-font-black);
+  font-size: 14px;
+}
+
+.footer_contents_left img {
+  width: 14px;
+  height: 14px;
+}
+
+.footer_contents_left span:not(:last-of-type)::after {
+  content: "ꞏ";
+  display: inline-block;
+  width: 1px;
+  margin: 0 8px;
+}
+
+.footer_contents_right a {
+  padding: 1px 10px;
+  color: var(--color-font-black);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.footer_blahblah {
+  color: var(--color-airbnbFont-grey);
+  font-size: 10px;
+  line-height: 12px;
+  padding: 8px 0px;
+}
+
+.footer_contents_icons {
+  display: flex;
+  width: 186px;
+  justify-content: space-between;
+}
+
+.footer_contents_icons a {
+  width: 18px;
+}
