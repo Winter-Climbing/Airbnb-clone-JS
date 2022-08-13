@@ -9,10 +9,9 @@
   display: flex;
   flex-grow: 1;
   flex-basis: 0;
-  margin: auto;
+  margin: 0px 119px;
   padding: 0px 80px;
   align-items: center;
-  width: 1280px;
   height: 5rem;
 }
 
