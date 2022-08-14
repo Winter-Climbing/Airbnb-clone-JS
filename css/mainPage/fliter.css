@@ -95,6 +95,7 @@ h2 {
   max-width: 780px;
   max-height: 633px;
   border-radius: 12px;
+  overflow: auto;
 }
 
 .filter_contents h2 {
@@ -103,18 +104,25 @@ h2 {
   font-weight: 600;
 }
 
-.filter_contents_relative {
-  position: relative;
+.filter_contents_sticky {
+  background-color: var(--color-white);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .filter_contents_header {
   display: flex;
-  padding: 0px 24px;
   justify-content: center;
   align-items: center;
+  padding: 0px 24px;
   width: 100%;
   min-height: 64px;
   border-bottom: 1px solid var(--color-airbnb-grey);
+}
+
+.filter_contents_header h2 {
+  font-size: 16px;
 }
 
 .filter_contents_header button {
@@ -415,10 +423,13 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: sticky;
+  bottom: 0;
   padding: 16px 24px;
   width: 100%;
   min-height: 81px;
   border-bottom: 1px solid var(--color-airbnb-grey);
+  background-color: var(--color-white);
 }
 
 .filter_contents_footer div {
