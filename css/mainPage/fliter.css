@@ -1,0 +1,440 @@
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-airbnb-grey: #dddddd;
+  --color-airbnbFont-grey: #717171;
+  --color-black: #000000;
+  --color-font-black: #222222;
+  --color-brand: #ff385c;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radious: 4px;
+
+  /* Annimations */
+  --annimation-duration: 300ms;
+}
+
+/* Universal tags */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+}
+
+em {
+  font-style: normal;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+cite {
+  font-style: none;
+}
+
+.blind {
+  display: none;
+}
+
+h2 {
+  color: var(--color-font-black);
+}
+
+/* filter */
+
+#filter {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: rgba(72, 72, 72, 0.5);
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter_contents {
+  background-color: var(--color-white);
+  width: 100%;
+  height: 100%;
+  max-width: 780px;
+  max-height: 633px;
+  border-radius: 12px;
+}
+
+.filter_contents h2 {
+  color: var(--color-font-black);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.filter_contents_relative {
+  position: relative;
+}
+
+.filter_contents_header {
+  display: flex;
+  padding: 0px 24px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 64px;
+  border-bottom: 1px solid var(--color-airbnb-grey);
+}
+
+.filter_contents_header button {
+  position: absolute;
+  left: 20px;
+  cursor: pointer;
+}
+
+.filter_contents_priceRange,
+.filter_contents_lodgingType,
+.filter_contents_bedroom,
+.filter_contents_bulidingType,
+.filter_contents_amenities,
+.filter_contents_reserve,
+.filter_contents_accessibility,
+.filter_contents_bestLodging,
+.filter_contents_language {
+  padding: 32px 24px;
+  border-bottom: 1px solid var(--color-airbnb-grey);
+}
+.filter_contents_priceRange_header p {
+  margin-top: 8px;
+  color: var(--color-airbnbFont-grey);
+}
+
+.filter_contents_priceRange_chart {
+  background-color: aquamarine;
+  width: 543px;
+  height: 64px;
+  margin: 24px 30.45px 6px;
+}
+
+.filter_contents_priceRange_price {
+  display: flex;
+
+  margin: 36px 30.45px 0px;
+}
+
+.filter_contents_priceRange_price_low,
+.filter_contents_priceRange_price_high {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 5px 0px 5px 10px;
+  width: 47%;
+  min-height: 52px;
+  border: 1px solid var(--color-airbnb-grey);
+  border-radius: 12px;
+}
+
+.filter_contents_priceRange_price_lowHigh {
+  font-size: 12px;
+  color: var(--color-airbnbFont-grey);
+}
+
+.filter_contents_priceRange_price_lowHigh_price {
+  font-weight: 200;
+}
+
+/* 숙소 유형 */
+
+.filter_contents_checkBox_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.filter_contents_checkBox_grid h2 {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.filter_contents_checkBox_grid {
+  margin-top: 24px;
+}
+
+.filter_contents_checkBox {
+  display: flex;
+  align-items: flex-start;
+  line-height: 22px;
+}
+
+.filter_contents_checkBox input {
+  margin-right: 18px;
+  width: 24px;
+  height: 24px;
+}
+
+.filter_contents_checkBox span {
+  color: var(--color-airbnbFont-grey);
+  font-size: 14px;
+}
+
+/* 침실과 침대 */
+
+.filter_contents_bedroom_list {
+  margin-top: 24px;
+}
+
+.filter_contents_bedroom_list_btn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.filter_contents_bedroom_list_btn button {
+  /* margin-right: 10px; */
+}
+
+.filter_contents_bedroom_list_btn button:first-child {
+  width: 110px;
+  height: 40px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  border-radius: 30px;
+}
+
+.filter_contents_bedroom_list_btn button:not(:first-of-type) {
+  width: 59px;
+  height: 40px;
+  border-radius: 30px;
+  border: 1px solid var(--color-black);
+}
+
+/* 건물 유형 */
+
+.filter_contents_bulidingType_flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.filter_contents_bulidingType_flex_type {
+  display: flex;
+  flex-direction: column;
+  width: 139px;
+  height: 128px;
+  border: 1px solid var(--color-airbnb-grey);
+  border-radius: 12px;
+  padding: 16px;
+}
+
+.filter_contents_bulidingType_flex_type img {
+  width: 32px;
+  height: 32px;
+}
+
+.filter_contents_bulidingType_flex_type span {
+  padding-top: 24px;
+  font-weight: 500;
+}
+
+/* 편의시설 */
+
+.filter_contents_amenities_necessary {
+  margin-top: 32px;
+  font-weight: 600;
+}
+
+.filter_contents_amenities_list {
+  padding: 12px 0px;
+}
+
+.filter_contents_amenities span {
+  display: block;
+  margin-top: 8px;
+  color: var(--color-font-black);
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* 예약 옵션 */
+
+.filter_contents_reserve h2 {
+  margin-bottom: 24px;
+}
+
+.filter_contents_reserve_list {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0px;
+}
+
+.filter_contents_reserve_list_sentence {
+  line-height: 24px;
+}
+
+.filter_contents_reserve_list_sentence span {
+  font-size: 14px;
+  color: var(--color-airbnbFont-grey);
+}
+
+.filter_contents_reserve_list_sentence div {
+  font-weight: 600;
+  color: var(--color-font-black);
+  text-decoration: underline;
+}
+
+/* 스위치 btn */
+
+.wrapper {
+  width: 48px;
+  height: 32px;
+  text-align: center;
+}
+#switch {
+  position: absolute;
+  /* hidden */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.switch_label {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: 48px;
+  height: 32px;
+  background: #b0b0b0;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+.switch_label:hover {
+  background: var(--color-airbnbFont-grey);
+}
+.onf_btn {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  background: white;
+  transition: 0.2s;
+}
+
+/* checking style */
+#switch:checked + .switch_label {
+  background: var(--color-black);
+  border: 1px solid var(--color-black);
+}
+
+#switch:checked + .switch_label:hover {
+  background: var(--color-airbnbFont-grey);
+}
+
+/* move */
+#switch:checked + .switch_label .onf_btn {
+  top: -0.01px;
+  left: 33%;
+  background: #fff;
+  box-shadow: 1px 2px 3px #00000020;
+}
+
+/* 접근성 편의 */
+
+.filter_contents_accessibility_title p {
+  padding-top: 8px;
+  color: var(--color-airbnbFont-grey);
+}
+
+.filter_contents_accessibility_checkBox {
+  margin-top: 36px;
+}
+
+.filter_contents_accessibility span {
+  display: block;
+  padding: 8px 0px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* 최고 수준의 숙소 */
+/* 예약 옵션의 css 참조 */
+
+.filter_contents_bestLodging_list {
+  padding-top: 24px;
+}
+
+/* 호스트 언어 */
+/* 체크박스 참조 */
+
+.filter_contents_language span {
+  display: block;
+  padding-top: 16px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Filter footer */
+
+.filter_contents_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  width: 100%;
+  min-height: 81px;
+  border-bottom: 1px solid var(--color-airbnb-grey);
+}
+
+.filter_contents_footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 162px;
+  height: 48px;
+  color: var(--color-white);
+  font-weight: 600;
+  background-color: var(--color-black);
+  border-radius: 12px;
+}
+
+.filter_contents_footer h4 {
+  color: var(--color-font-black);
+  font-weight: 600;
+  text-decoration: underline;
+}
