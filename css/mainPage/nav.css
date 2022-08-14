@@ -28,9 +28,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  max-width: 88px;
+  width: 90px;
   height: 48px;
-
   font-weight: 600;
 }
 
@@ -58,21 +57,25 @@
   right: 14px;
 } */
 .nav_right_btnSpace {
+  width: 36px;
+  height: 78px;
   position: absolute;
-  top: 38%;
-  right: 12.4%;
+  top: 16%;
+  right: 11.9%;
   z-index: 2;
 }
-.nav_right {
+
+.nav_right_btnSpace_btn {
   width: 28px;
   height: 28px;
   background-color: var(--color-white);
   border-radius: 50px;
   font-size: 20px;
-  text-align: center;
   font-weight: 700;
   color: var(--color-light-grey);
   border: 1px solid var(--color-airbnb-grey);
+  margin-left: 4px;
+  margin-top: 24px;
 }
 
 .nav_filter {
