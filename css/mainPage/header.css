@@ -45,9 +45,11 @@
 }
 
 .header_search_strong {
+  height: 22px;
   padding: 0 16px;
   font-weight: 700;
   font-size: 0.875rem;
+  border-right: 1px solid var(--color-airbnb-grey);
 }
 
 /* .koo {
@@ -110,7 +112,12 @@
 
 .header_profile_host_map {
   width: 46px;
-  height: 14px;
+  height: 17px;
+}
+
+.header_profile_host_map img {
+  width: 16px;
+  height: 16px;
 }
 
 .header_profile_host a {
@@ -126,11 +133,13 @@
   justify-content: space-evenly;
   border-radius: 40px;
   box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
-  width: 77px;
+  width: 83px;
   height: 44px;
 }
 
 .header_profile_user img {
   width: 28.9px;
   height: 28.9px;
+  filter: invert(37%) sepia(0%) saturate(3822%) hue-rotate(244deg)
+    brightness(114%) contrast(92%);
 }

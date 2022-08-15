@@ -53,11 +53,25 @@
   margin: 0 8px;
 }
 
+.footer_contents_right {
+  display: flex;
+  align-items: center;
+  width: 329px;
+}
+
 .footer_contents_right button {
+  display: flex;
+  align-items: center;
   padding: 1px 10px;
   color: var(--color-font-black);
   font-weight: 600;
   font-size: 14px;
+  height: 18px;
+}
+
+.footer_contents_right button img {
+  width: 16px;
+  height: 16px;
 }
 
 .footer_blahblah {
