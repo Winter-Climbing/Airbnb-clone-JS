@@ -15,21 +15,6 @@
   }
 }
 
-@keyframes filter-disappear {
-  0% {
-    transform: translateY(500px);
-    opacity: 0.5;
-  }
-
-  80% {
-    opacity: 0.9;
-  }
-
-  100% {
-    transform: translate(0px);
-  }
-}
-
 #filter_display {
   display: none;
   position: fixed;

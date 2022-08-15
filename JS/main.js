@@ -1,4 +1,3 @@
-const $nav_filter = document.querySelector(".nav_filter");
 const $filter_display = document.querySelector("#filter_display");
 const $filter_contents = document.querySelector(".filter_contents");
 const $filter = document.querySelector("#filter");
@@ -15,8 +14,12 @@ const nav_filter_toggle = () => {
     if (filter_boolean === true) {
       $filter_display.addEventListener("click", (e) => {
         if (e.target === $filter) {
-          $filter_display.style.display = "none";
-          filter_boolean = false;
+          $filter_contents.style.animation =
+            "filter-appear 0.3s linear reverse;";
+          setTimeout(() => {
+            $filter_display.style.display = "none";
+            filter_boolean = false;
+          }, 300);
         }
       });
     }
