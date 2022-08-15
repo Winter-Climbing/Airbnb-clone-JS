@@ -1,3 +1,76 @@
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-airbnb-grey: #dddddd;
+  --color-airbnbFont-grey: #717171;
+  --color-black: #000000;
+  --color-font-black: #222222;
+  --color-brand: #ff385c;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radious: 4px;
+
+  /* Annimations */
+  --annimation-duration: 300ms;
+}
+
+/* Universal tags */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+}
+
+em {
+  font-style: normal;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+cite {
+  font-style: none;
+}
+
+.blind {
+  display: none;
+}
+
 /* Header */
 
 #header {
@@ -135,6 +208,30 @@
   box-shadow: 0 1px 2px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 5%);
   width: 83px;
   height: 44px;
+}
+
+.header_profile_user_position {
+  position: relative;
+}
+
+.header_profile_user_position_absolute {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: -3px;
+  left: 21px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  z-index: 2;
+}
+
+.header_profile_user_position_absolute_color {
+  background-color: var(--color-brand);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  z-index: 3;
+  transform: translate(1px, 1px);
 }
 
 .header_profile_user img {
