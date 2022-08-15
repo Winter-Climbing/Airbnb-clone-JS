@@ -1,3 +1,76 @@
+:root {
+  /* Color */
+  --color-white: #ffffff;
+  --color-light-white: #eeeeee;
+  --color-dark-white: #bdbdbd;
+  --color-airbnb-grey: #dddddd;
+  --color-airbnbFont-grey: #717171;
+  --color-black: #000000;
+  --color-font-black: #222222;
+  --color-brand: #ff385c;
+
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 14px;
+
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
+
+  /* Size */
+  --size-border-radious: 4px;
+
+  /* Annimations */
+  --annimation-duration: 300ms;
+}
+
+/* Universal tags */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  cursor: default;
+}
+
+a {
+  text-decoration: none;
+}
+
+em {
+  font-style: normal;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+cite {
+  font-style: none;
+}
+
+.blind {
+  display: none;
+}
+
 /*  Navbar */
 
 .nav_flex {
@@ -13,7 +86,7 @@
   display: flex;
   justify-content: space-between;
   padding: 20px 0px;
-  width: 1200px;
+  width: 1250px;
   overflow: hidden;
 }
 
@@ -21,6 +94,25 @@
   padding: 0px;
   height: 78px;
   max-width: 88px;
+  color: var(--color-airbnbFont-grey);
+  filter: invert(45%) sepia(0%) saturate(0%) hue-rotate(118deg) brightness(96%)
+    contrast(88%);
+}
+
+.nav_btn:hover {
+  border-bottom: 2px solid var(--color-airbnb-grey);
+  filter: invert(8%) sepia(1%) saturate(1769%) hue-rotate(331deg)
+    brightness(103%) contrast(88%);
+  color: var(--color-font-black);
+  font-weight: 600;
+}
+
+.nav_btn:focus {
+  border-bottom: 2px solid var(--color-black);
+  filter: invert(8%) sepia(1%) saturate(1769%) hue-rotate(331deg)
+    brightness(103%) contrast(88%);
+  color: var(--color-font-black);
+  font-weight: 600;
 }
 
 .nav_btn-title {
@@ -36,35 +128,34 @@
 .nav_btn-title-img {
   width: 24px;
   height: 24px;
-  filter: invert(45%) sepia(0%) saturate(0%) hue-rotate(118deg) brightness(96%)
-    contrast(88%);
 }
 
 .nav_btn-title-p {
   font-size: 12px;
-  color: var(--color-airbnbFont-grey);
-}
-.nav_btn:hover {
-  cursor: pointer;
-  color: var(--color-black);
 }
 
-/* .nav_right_space {
-  width: 36px;
-  height: 78px;
-  position: absolute;
-  top: 18%;
-  right: 14px;
-} */
+.nav_left_btnSpace,
 .nav_right_btnSpace {
-  width: 36px;
+  width: 38px;
   height: 78px;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 1px 1px 1px white;
+}
+
+.nav_right_btnSpace {
   position: absolute;
   top: 16%;
   right: 11.9%;
-  z-index: 2;
 }
 
+.nav_left_btnSpace {
+  position: absolute;
+  top: 16%;
+  display: none;
+}
+
+.nav_left_btnSpace_btn,
 .nav_right_btnSpace_btn {
   width: 28px;
   height: 28px;

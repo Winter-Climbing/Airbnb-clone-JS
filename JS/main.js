@@ -8,5 +8,3 @@ const nav_filter_toggle = () => {
     $filter_display.style.display = "none";
   }
 };
-
-// $nav_filter.addEventListener("click", nav_filter_toggle);
