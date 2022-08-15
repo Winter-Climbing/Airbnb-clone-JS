@@ -1,6 +1,21 @@
 /* filter */
 
-@keyframes sample-ani {
+@keyframes filter-appear {
+  0% {
+    transform: translateY(500px);
+    opacity: 0.5;
+  }
+
+  80% {
+    opacity: 0.9;
+  }
+
+  100% {
+    transform: translate(0px);
+  }
+}
+
+@keyframes filter-disappear {
   0% {
     transform: translateY(500px);
     opacity: 0.5;
@@ -41,7 +56,7 @@
   max-width: 780px;
   max-height: 633px;
   border-radius: 12px;
-  animation: sample-ani 0.3s linear forwards;
+  animation: filter-appear 0.3s linear forwards;
 }
 
 .filter_contents h2 {
