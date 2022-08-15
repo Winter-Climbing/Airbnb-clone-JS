@@ -1,23 +1,18 @@
-// 스크롤 변화에 따른 넷바 변환
-const navber = document.querySelector("#navbar");
-const navbar_height = navber.getBoundingClientRect().height;
+const $images = document.querySelector("#images");
+const images_height = $images.getBoundingClientRect().bottom;
+const $pop = document.querySelector("#pop");
+const $calender_detail = document.querySelector(".calender_detail");
+const calender_detail_height = $calender_detail.getBoundingClientRect().top;
+const $pop_up_priceBtn = document.querySelector(".pop_up_priceBtn");
 
-// window.scrollY는 스크롤에 따라 변동되는 값
-// getBoundingClientRect 내장 함수로 해당 태그의 크기를 파악
-// 위의 2개를 비교해서 새로운 클래스를 추가해서 시작적으로 변동하도록 만듦
-const navbar_scroll = () => {
-  // console.log(window.scrollY);
-  // console.log(navbar_height);
-  if (window.scrollY > navbar_height) {
-    navber.classList.add("navbar--yellow");
-  } else {
-    navber.classList.remove("navbar--yellow");
-  }
+const pop_scroll = () => {
+  window.scrollY > images_height
+    ? ($pop.style.display = "block")
+    : ($pop.style.display = "none");
+
+  window.scrollY < calender_detail_height
+    ? ($pop_up_priceBtn.style.display = "none")
+    : ($pop_up_priceBtn.style.display = "flex");
 };
 
-document.addEventListener("scroll", navbar_scroll);
-
-const $images = document.querySelector('#images')
-const $images_height = $images.getBoundingClientRect().height;
-
-const 
+document.addEventListener("scroll", pop_scroll);

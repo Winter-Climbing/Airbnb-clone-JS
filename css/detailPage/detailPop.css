@@ -31,7 +31,6 @@
 .pop_up_priceBtn {
   display: flex;
   align-items: center;
-  display: none;
 }
 
 .pop_up_priceBtn button {
