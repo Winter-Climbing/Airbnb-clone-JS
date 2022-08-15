@@ -24,6 +24,34 @@
   margin-bottom: 10px;
 }
 
+.lodging_img2 {
+  background-image: url(https://a0.muscache.com/im/pictures/78fb8268-b999-4389-b072-e2a66910e41b.jpg?im_w=720);
+}
+
+.lodging_img3 {
+  background-image: url(https://a0.muscache.com/im/pictures/miso/Hosting-52159627/original/d727cf6e-4787-4b38-a86f-0cd8d91d02b2.png?im_w=720);
+}
+
+.lodging_img4 {
+  background-image: url(https://a0.muscache.com/im/pictures/e24c13b9-dd2a-4e15-9845-dd588a884e39.jpg?im_w=720);
+}
+
+.lodging_img5 {
+  background-image: url(https://a0.muscache.com/im/pictures/9f5e2990-665a-4e8d-a5ad-89881fff8d33.jpg?im_w=720);
+}
+
+.lodging_img6 {
+  background-image: url(https://a0.muscache.com/im/pictures/16f4c777-2587-4008-b755-86747c59b5e7.jpg?im_w=720);
+}
+
+.lodging_img7 {
+  background-image: url(https://a0.muscache.com/im/pictures/03eabe44-3c2f-4c4f-893e-d3476ad682ab.jpg?im_w=720);
+}
+
+.lodging_img8 {
+  background-image: url(https://a0.muscache.com/im/pictures/00ab4e4e-502a-4874-bf65-eb463310ee4f.jpg?im_w=720);
+}
+
 .lodging_img_heartBtn {
   width: 24px;
   height: 24px;
@@ -63,6 +91,15 @@
   justify-content: space-between;
   width: 100%;
   margin-bottom: 5px;
+}
+
+.lodging_text_title_star {
+  display: flex;
+  align-items: flex-end;
+}
+
+.lodging_text_title_star svg {
+  margin-right: 5px;
 }
 
 .lodging_text_title h2 {
