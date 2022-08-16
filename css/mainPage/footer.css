@@ -32,8 +32,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 13px 0px 14px 0px;
-  border-bottom: 1px solid var(--color-airbnb-grey);
+  padding: 13px 80px 14px;
+
+  margin: 0 auto;
+  max-width: 1760px;
 }
 
 .footer_contents_left {
@@ -74,9 +76,17 @@
   height: 16px;
 }
 
+.footer_underline {
+  border-bottom: 1px solid var(--color-airbnb-grey);
+  width: 1583px;
+  margin: 0px auto;
+}
+
 .footer_blahblah {
   color: var(--color-airbnbFont-grey);
   font-size: 10px;
   line-height: 12px;
-  padding: 8px 0px;
+  padding: 8px 80px;
+  margin: 0 auto;
+  max-width: 1760px;
 }
