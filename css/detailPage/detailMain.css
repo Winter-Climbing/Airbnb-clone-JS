@@ -3,9 +3,10 @@
 #main {
   display: flex;
   justify-content: space-between;
-  margin: 48px 119px 0px;
+  margin: 48px auto 0px;
   padding: 0px 80px 0;
   border-bottom: 1px solid var(--color-airbnb-grey);
+  max-width: 1280px;
 }
 
 /* Main Left */
@@ -408,8 +409,9 @@
 /* Variable */
 
 #variable {
-  margin: 48px 119px 0px;
+  margin: 48px auto 0px;
   padding: 0px 80px 0;
+  max-width: 1280px;
 }
 
 .reviews {

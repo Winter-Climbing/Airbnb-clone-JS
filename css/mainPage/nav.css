@@ -7,13 +7,15 @@
   padding: 0px 80px;
   z-index: 1;
   position: relative;
+  margin: 0 auto;
+  max-width: 1760px;
 }
 
 .navBtn_flex {
   display: flex;
   justify-content: space-between;
   padding: 20px 0px;
-  width: 1250px;
+  max-width: 1480px;
   overflow: hidden;
 }
 
@@ -73,7 +75,7 @@
 .nav_right_btnSpace {
   position: absolute;
   top: 16%;
-  right: 11.9%;
+  right: 9.9%;
 }
 
 .nav_left_btnSpace {
